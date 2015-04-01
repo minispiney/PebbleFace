@@ -1,4 +1,7 @@
 #include <pebble.h>
+// set one of these to "1" to build for each event
+#define MOT 0
+#define MOTD 1
 
 static Window    *window;
 static TextLayer *hours_layer;
@@ -11,15 +14,28 @@ static char hours_buffer[]   = "00:";
 static char minutes_buffer[] = "00";
 static char seconds_buffer[] = ":00";
 
-static char event_name_buffer[] = "MOTD";
 static char to_go_buffer[] = "  NOW days";
 static char countdown_buffer[256];
 
+#if MOTD
 // start timestamp for MINIS on the Dragon
 // midnight on day 1
 static time_t event_start = 1430265600;
 // number of days - 1 (starts at 0)
 static int    event_length = 4;
+// name of the event
+static char event_name_buffer[] = "MOTD";
+#endif
+
+#if MOT
+// start timestamp for MINIS on the Dragon
+// midnight on day 1
+static time_t event_start = 1434686400;
+// number of days - 1 (starts at 0)
+static int    event_length = 4;
+// name of the event
+static char event_name_buffer[] = "MOT";
+#endif
 
 static BitmapLayer *s_background_layer;
 static GBitmap *s_background_bitmap;
