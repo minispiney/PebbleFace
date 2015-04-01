@@ -1,0 +1,96 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "ian@pondhouse.org",
+    "longName": "MOTD Countdown",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/ampm_pm.png",
+                "name": "AMPM_PM",
+                "type": "png"
+            },
+            {
+                "file": "images/ampm_am.png",
+                "name": "AMPM_AM",
+                "type": "png"
+            },
+            {
+                "file": "images/ampm_blank.png",
+                "name": "AMPM_BLANK",
+                "type": "png"
+            },
+            {
+                "file": "images/btdisconnected.png",
+                "name": "BT_DISCONNECTED",
+                "type": "png"
+            },
+            {
+                "file": "images/btconnected.png",
+                "name": "BT_CONNECTED",
+                "type": "png"
+            },
+            {
+                "file": "images/basic.png",
+                "name": "BATTERY_BASIC",
+                "type": "png"
+            },
+            {
+                "file": "images/charging.png",
+                "name": "BATTERY_CHARGING",
+                "type": "png"
+            },
+            {
+                "file": "images/full.png",
+                "name": "BATTERY_CONNECTED",
+                "type": "png"
+            },
+            {
+                "file": "images/charge6.png",
+                "name": "BATTERY_100",
+                "type": "png"
+            },
+            {
+                "file": "images/charge5.png",
+                "name": "BATTERY_80",
+                "type": "png"
+            },
+            {
+                "file": "images/charge4.png",
+                "name": "BATTERY_60",
+                "type": "png"
+            },
+            {
+                "file": "images/charge3.png",
+                "name": "BATTERY_40",
+                "type": "png"
+            },
+            {
+                "file": "images/charge2.png",
+                "name": "BATTERY_20",
+                "type": "png"
+            },
+            {
+                "file": "images/empty.png",
+                "name": "BATTERY_EMPTY",
+                "type": "png"
+            },
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "MOTD Countdown",
+    "uuid": "50ba8d83-11a3-4846-a34d-ff428b06f8de",
+    "versionCode": 1,
+    "versionLabel": "1.3",
+    "watchapp": {
+        "watchface": true
+    }
+}
