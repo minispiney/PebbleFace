@@ -123,10 +123,10 @@ void update_countdown() {
     snprintf(to_go_buffer,sizeof(to_go_buffer),"\n%d day",diff);
   // diff between -length and 0 means event running
   else if ((diff >= (1-event_length)) && (diff <= 0))
-    snprintf(to_go_buffer,sizeof(to_go_buffer),"\n%s","NOW");
+    snprintf(to_go_buffer,sizeof(to_go_buffer),"\n%s","is ON!");
   //diff less than -length means over
   else if (diff < (1-event_length))
-    snprintf(to_go_buffer,sizeof(to_go_buffer),"\n%s","OVER");
+    snprintf(to_go_buffer,sizeof(to_go_buffer),"\n%s","is over");
 
   strncat(countdown_buffer,to_go_buffer,sizeof(countdown_buffer)-sizeof(to_go_buffer));
 
